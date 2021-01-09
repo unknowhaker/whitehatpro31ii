@@ -37,7 +37,7 @@ function draw() {
       plinko[k].display();
     }
     if (frameCount%60===0){
-      particles.push(new Partic(random(width/2-10,width/2+10),10,10));
+      particles.push(new Partic(random(width/2-10,width/2+10),2,2));
     }
   
   for(var k=0; k<particles.length; k++){
