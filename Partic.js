@@ -1,7 +1,7 @@
 class Partic{
-    constructor(x,y){
-        this.body = Bodies.circle(x,y,5,{restitution:0.3, friction: 0.5, density:1.2});
-        this.radius = 5;
+    constructor(x,y,r){
+        this.body = Bodies.circle(x,y,r,{restitution:0.3, friction: 0.5, density:1.2});
+        this.radius = r;
         this.colour = color(random(0,255),random(0,255),random(0,25))
         World.add(world,this.body);
     }
