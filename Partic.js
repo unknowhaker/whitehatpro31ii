@@ -2,7 +2,7 @@ class Partic{
     constructor(x,y,r){
         this.body = Bodies.circle(x,y,r,{restitution:0.3, friction: 0.5, density:1.2});
         this.radius = r;
-        this.colour = color(random(0,255),random(0,255),random(0,25))
+        this.colour = color(random(0,255),random(0,255),random(0,255))
         World.add(world,this.body);
     }
     display(){
@@ -14,7 +14,7 @@ class Partic{
         noStroke();
         fill(this.colour);
         ellipseMode(RADIUS);
-        ellipse(pos.x,pos.y,this.r,this.r);
+        ellipse(0,0,this.r,this.r);
         pop();
     }
 }
